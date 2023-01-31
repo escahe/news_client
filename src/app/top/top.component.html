@@ -1,0 +1,12 @@
+<div class="container mt-5">
+    <h4>Principales titulares</h4>
+    <div class="row">
+        <div *ngFor="let item of topDisplay" class="col-lg-3 mt-3 mb-3">
+            <div class="box">
+                <img src="{{item.urlToImage}}" width="100%">
+                <h5 class="mt-2 mb-2">{{ item.title }}</h5>
+                <a href="{{ item.url }}" target="_blank" class="btn btn-primary btn-sm">Leer más</a>
+            </div>
+        </div>
+    </div>
+</div>

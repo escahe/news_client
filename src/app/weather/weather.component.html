@@ -1,0 +1,15 @@
+<div class="padding">
+    <div class="col-lg-6">
+            <div class="card-body p-4">
+              <h4 class="mb-1 sfw-normal">{{weatherDisplay.name}}, {{weatherDisplay.sys.country}}</h4>
+              <p class="mb-2">Temperatura Actual: <strong>{{weatherDisplay.main.temp}}°C</strong></p>
+              <p>Sensación Térmica: <strong>{{weatherDisplay.main.feels_like}}°C</strong></p>
+              <p>Max: <strong>{{weatherDisplay.main.temp_max}}°C</strong>, Min: <strong>{{weatherDisplay.main.temp_min}}°C</strong></p>
+  
+              <div class="d-flex flex-row align-items-center">
+                <p class="mb-0 me-4">{{weatherDisplay.weather[0].description}}</p>
+              </div>
+  
+            </div>
+    </div>
+</div>
